@@ -1,0 +1,214 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body style="background-color: rgb(231, 219, 147);"></body>
+
+
+    <h1>CAR PRICE PREDICTION</h1>
+
+    <form method = "GET" action= "/predict_price">
+
+
+        <div>
+
+        <label>Normalized Losses&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <input type = "text" name = "normalized_losses" style="display: inline-block; margin-right: 146px;" >
+        </select>
+
+
+        <label>Width&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <input type = "text" name = "width" style="display: inline-block;">
+        </select>
+    
+        </div>
+
+        <br>
+
+        <div>
+
+        <label>Fuel Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <label>Gas:</label> <input type = "radio" name="fuel_type" value = "gas" style="display: inline-block; margin-right: 10px;">
+        <label>Diesel:</label> <input type = "radio" name="fuel_type" value = "diesel" style="display: inline-block; margin-right: 190px;">
+        </select>
+
+        
+
+        <label>Aspiration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <label>Standard:</label> <input type = "radio" name="aspiration" value = "std" style="display: inline-block;" >
+        <label>Turbo:</label> <input type = "radio" name="aspiration" value = "turbo" style="display: inline-block;">
+        </select>
+
+        </div>
+
+
+        <br>
+
+        <div>
+
+        <label>Number of Doors&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <label>Two:</label> <input type = "radio" name="num_of_doors" value = "two"  style="display: inline-block; margin-right: 10px;">
+        <label>Four:</label> <input type = "radio" name="num_of_doors" value = "four" style="display: inline-block; margin-right: 196px;">
+        </select>
+
+
+        <label>Engine Location&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <label>Front:</label> <input type = "radio" name="engine_location" value = "front"  style="display: inline-block;">
+        <label>Rear:</label> <input type = "radio" name="engine_location" value = "rear"  style="display: inline-block;">
+        </select>
+
+        </div>
+
+            <br>
+
+
+            <div>
+
+
+            <label>Engine Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+            <input type = "text" name = "engine_size"  style="display: inline-block; margin-right: 144px;">
+            </select>
+
+
+            <label>Stroke&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+            <input type = "text" name = "stroke" style="display: inline-block;">
+            </select>
+
+           </div>
+
+            <br>
+ 
+            <div>
+
+            <label>Compression Ratio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+            <input type = "text" name = "compression_ratio" style="display: inline-block; margin-right: 138px;">
+            </select>
+
+
+
+            <label>Horsepower&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+            <input type = "text" name = "horsepower" style="display: inline-block;">
+            </select>
+
+           </div>
+
+            <br>
+
+            <div>
+
+            <label>Peak rpm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+            <input type = "text" name = "peak_rpm" style="display: inline-block; margin-right: 142px;">
+            </select>
+
+
+
+            <label>City mpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+            <input type = "text" name = "city_mpg" style="display: inline-block;">
+            </select>
+
+           </div>
+
+            <br>
+
+             
+            <div>
+            <label>Drive Wheels&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+            <select name = "drive_wheels" style="display: inline-block; margin-right: 182px;">
+            
+                <option value = 'fwd'>Front Wheel Drive</option>
+                <option value = 'rwd'>Rear Wheel Drive</option>
+                <option value = '4wd'>Four Wheel Drive</option>
+            </select>
+
+            <label>Number of Cylinders&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+            <select name = "num_of_cylinders" style="display: inline-block;">
+            
+                <option value = 'two'>Two</option>
+                <option value = 'three'>Three</option>
+                <option value = 'four'>Four</option>
+                <option value = 'five'>Five</option>
+                <option value = 'six'>Six</option>
+                <option value = 'eight'>Eight</option>
+                <option value = 'twelve'>Twelve</option>
+            </select>
+
+           </div>
+
+            <br>
+
+            <div>
+
+            <label>Companey&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; </label>
+            <label for = "make">
+            <select name = "make" id="make" style="display: inline-block; margin-right: 200px;">
+                    <option value = "alfa-romero">Alfa Romero</option>
+                    <option value = "audi">Audi</option>
+                    <option value = "bmw">BMW</option>
+                    <option value = "chevrolet">Shevrolet</option>
+                    <option value = "mercedes-benz">Mercedes Benz </option>
+            </select>
+
+
+            <label>Body Style&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; </label>
+            <label for = "body_style">
+            <select name = "body_style" id="body_style" style="display: inline-block;">
+                    <option value = 'convertible'>Convertible</option>
+                    <option value = "hatchback">Hatchback</option>
+                    <option value = "sedan">Sedan</option>
+                    <option value = "wagon">Wagon</option>
+            </select>
+
+          </div>
+
+
+            <br>
+
+            <div>
+
+            <label>Engine Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; </label>
+            <label for = "engine_type">
+            <select name = "engine_type" id="engine_type" style="display: inline-block; margin-right: 256px;">
+                   <option value = "dohc">dohc</option>
+                   <option value = "ohcv">ohcv</option>
+                   <option value = "rotor">rotor</option>
+                   <option value = "dohcv">dohcv</option>
+            </select>
+
+       
+            <label>Fuel System&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; </label>
+            <label for = "fuel_system">
+            <select name = "fuel_system" id="fuel_system" style="display: inline-block;">
+                    <option value = "mpfi">mpfi</option>
+                    <option value = "2bbl">2bbl</option>
+                    <option value = "mfi">rmfi/option>
+                    <option value = "1bbl">1bbl</option>
+            </select>
+
+          </div>
+
+           <br>
+
+            <label>Highway mpg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+            <input type = "text" name = "highway_mpg" >
+            </select>
+
+
+            <br>
+            <br>
+            <br>
+            <input type = "submit" value = "SUBMIT">
+
+            <br>
+            <p>Price of Your Dream CAR would  be <b> $ {{prediction}}</b> </p>
+
+
+        </form>
+
+</body>
+</html>
